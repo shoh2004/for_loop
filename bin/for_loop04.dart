@@ -1,12 +1,10 @@
-num func(List<int> numbers) {
-  int d = 0;
-  num r = 0;
+int func(List<int> numbers) {
   int a = numbers.length;
-  while (d < a) {
-    if (numbers[d] % 2 == 0) {
-      r += numbers[d];
+  int x = 0;
+  for(int i = 0; a > i; i += 1){
+    if(numbers[i].isEven){
+      x += numbers[i];
     }
-    d++;
   }
 /*
    Given the list of numbers, return the sum the even numbers in the list
@@ -15,9 +13,11 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+ return x;
 }
 
 void main() {
-  print(func([26, 21, 5, 6, 547, 2, 4, 224]));
-} 
+  print(func([26,5434,5,4,5,1,]));
+  
+  }
+  
