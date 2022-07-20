@@ -1,13 +1,10 @@
 
-  num func(List numbers) {
-  int a = 0;
-  int b = numbers.length;
-  num d = 0;
-  while(b>a){
-    d += numbers[a];
-    a++;
-  } 
-  return d;
+  int func(List<int> numbers) {
+  int b = 0;
+
+  for (int q = 0; q < numbers.length; q++) {
+    b += numbers[q];
+  }
   /*
 Given the list of numbers, return sum of the numbers in the list
 Args:
@@ -15,9 +12,10 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+return b;
 }
+
 void main() {
-  print(func([1,2,3,4,5]));
+  print(func([324, 5, 5, 5, 5, 5, 4, 4, 5]));
 }
 
