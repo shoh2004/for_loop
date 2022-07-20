@@ -1,14 +1,9 @@
 int func(List<int> numbers, int k, int n) {
-  int a = 0;
-  //int y = 0;
-
-  numbers.getRange(k, n);
-  //int a = numbers.length  1;
-  while (k < n) {
-    if (numbers[k] % 2 == 0) {
-      a += numbers[k];
+  int y = 0;
+  for (int q = k; q < n; q++) {
+    if (numbers[q] % 2 == 0) {
+      y += numbers[q];
     }
-    k++;
   }
 /*
    Given the list of numbers, return the sum of the even numbers between k and n in the list
@@ -19,10 +14,11 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+ return y;
 }
 
 void main() {
-  print(func([4, 2, 37, 7, 23, 2, 2], 2, 6));
+  print(func([3, 3, 34, 8, 8, 2], 0, 6));
 }
+
 
