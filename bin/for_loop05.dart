@@ -1,7 +1,10 @@
-int func(List<int> numbers, int k, int n) {
-  int y = 0;
-  for (int q = k; q < n; q++) {
-    y += numbers[q];
+int func(List<int> numbers) {
+  int a = numbers.length;
+  int x = 0;
+  for(int i = 0; a > i; i += 1){
+    if(numbers[i].isOdd){
+      x += numbers[i];
+    }
   }
 /*
    Given the list of numbers, return sum the odd numbers in the list
@@ -10,11 +13,11 @@ Args:
 Return: 
   Int: answer
 */
- return y;
+ return x;
 }
 
 void main() {
-  print(func([23,36,4,3,4,34,445,5,36,5,636,]1,6));
-}
-
-    
+  print(func([26,5434,5,4,5,1,]));
+  
+  }
+  
