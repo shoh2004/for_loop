@@ -1,13 +1,11 @@
-num func(List<int> numbers, int k, int n) {
-  num w = 0;
-  int y = 0;
-  numbers.getRange(k, n);
-  int a = numbers.length - 1;
-  while (k < n) {
-    w += numbers[k];
-
-    k++;
+int func(List<int> numbers, int k, int n) {
+  int f= 0;
+  for (int q = k; q < n; q++) {
+    if (numbers[q] % 2 == 0) {
+      f += numbers[q];
+    }
   }
+
 /*
    Given the list of numbers, return the sum of the numbers between k and n in the list
 Args:
@@ -17,9 +15,9 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+return f;
 }
-
-void main() {
-  print(func([6, 2, 8, 1, 6, 3, 7], 2, 4));
-}
+ void main() {
+  print(func([21,34,2,1,2,32,223,3,34,3,434],1,4,));
+  
+} 
