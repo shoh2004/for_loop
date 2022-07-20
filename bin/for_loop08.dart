@@ -1,13 +1,9 @@
 int func(List<int> numbers, int k, int n) {
-  int a = 0;
-
-  numbers.getRange(k, n);
-
-  while (k < n) {
-    if (numbers[k] % 2 == 1) {
-      a += numbers[k];
+  int f = 0;
+  for (int q = k; q < n; q++) {
+    if (numbers[q].isOdd) {
+      f += numbers[q];
     }
-    k++;
   }
 /*
    Given the list of numbers, return the sum of the odd numbers between k and n in the list
@@ -18,12 +14,9 @@ Args:
 Return: 
   Int: answer
 */
-  return a;
+return f;
 }
 
-
 void main() {
-  print(func([7, 7, 7, 9, 34], 0, 4));
-} 
-
-
+  print(func([5, 4, 52, 55, 56], 0, 4));
+}
